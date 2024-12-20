@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 const achievements = [
   {
     icon: Award,
-    title: "7x Certified",
+    title: "12x Certified",
     description: "Multiple Salesforce certifications including Admin, Platform App Builder, and more",
   },
   {
