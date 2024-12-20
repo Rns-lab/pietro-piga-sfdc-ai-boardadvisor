@@ -9,14 +9,23 @@ export const Hero = () => {
           Driving Innovation in Salesforce Projects
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 mb-8">
-          5 years of expertise • 12 certifications • First Italian Salesforce Podcast
+          Salesforce Project Manager • 7x Certified • Trailhead Ranger • Italian Salesforce Podcast Host
         </p>
-        <Button
-          className="text-lg px-8 py-6 bg-sf-blue hover:bg-sf-navy transition-all duration-300"
-          onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-        >
-          Let's Connect <ArrowRight className="ml-2" />
-        </Button>
+        <div className="flex flex-col md:flex-row gap-4 justify-center">
+          <Button
+            className="text-lg px-8 py-6 bg-sf-blue hover:bg-sf-navy transition-all duration-300"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+          >
+            Let's Connect <ArrowRight className="ml-2" />
+          </Button>
+          <Button
+            variant="outline"
+            className="text-lg px-8 py-6 border-sf-blue text-sf-blue hover:bg-sf-blue hover:text-white transition-all duration-300"
+            onClick={() => window.open('https://www.salesforce.com/trailblazer/pietropiga', '_blank')}
+          >
+            View Trailblazer Profile <ArrowRight className="ml-2" />
+          </Button>
+        </div>
       </div>
     </div>
   );
