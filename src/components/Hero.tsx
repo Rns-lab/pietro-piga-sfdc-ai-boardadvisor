@@ -33,12 +33,15 @@ export const Hero = () => {
             View Trailblazer Profile <ArrowRight className="ml-2" />
           </Button>
         </div>
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto relative">
           <img 
             src="/lovable-uploads/6ebe36cf-d201-4bf5-87fc-838b82308018.png" 
             alt="Podcast Setup" 
             className="w-full rounded-xl shadow-lg"
           />
+          <div className="absolute top-4 left-1/2 transform -translate-x-1/2 bg-black/70 px-6 py-3 rounded-full">
+            <h3 className="text-white font-semibold text-xl md:text-2xl">Salesforce Sidekicks</h3>
+          </div>
         </div>
       </div>
     </div>
