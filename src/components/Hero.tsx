@@ -39,8 +39,14 @@ export const Hero = () => {
             alt="Podcast Setup" 
             className="w-full rounded-xl shadow-lg"
           />
-          <div className="absolute top-4 left-1/2 transform -translate-x-1/2 bg-black/70 px-6 py-3 rounded-full">
-            <h3 className="text-white font-semibold text-xl md:text-2xl">Salesforce Sidekicks</h3>
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-8 rounded-b-xl">
+            <h3 className="text-white font-light text-2xl md:text-3xl tracking-wider">
+              <span className="font-normal">Salesforce</span> 
+              <span className="font-extralight italic ml-2">Sidekicks</span>
+            </h3>
+            <p className="text-white/80 text-sm md:text-base mt-2 font-light">
+              The First Italian Salesforce Podcast
+            </p>
           </div>
         </div>
       </div>
