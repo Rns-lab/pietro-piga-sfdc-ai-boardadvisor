@@ -19,7 +19,7 @@ export const FloatingChat = () => {
   if (!isVisible) return null;
 
   return (
-    <div className={`fixed bottom-4 right-4 z-50`}>
+    <div className="fixed bottom-4 right-4">
       {isChatOpen ? (
         <iframe
           src="https://www.chatbase.co/chatbot-iframe/GfjBc9_aXcpCGiJUlLukm"
