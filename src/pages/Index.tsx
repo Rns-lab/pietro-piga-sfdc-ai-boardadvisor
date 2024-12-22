@@ -3,6 +3,8 @@ import { Achievements } from "@/components/Achievements";
 import { PodcastSection } from "@/components/PodcastSection";
 import { SocialHighlights } from "@/components/SocialHighlights";
 import { ContactForm } from "@/components/ContactForm";
+import { FloatingChat } from "@/components/FloatingChat";
+import { LeadForm } from "@/components/LeadForm";
 
 const Index = () => {
   return (
@@ -12,6 +14,8 @@ const Index = () => {
       <PodcastSection />
       <SocialHighlights />
       <ContactForm />
+      <LeadForm />
+      <FloatingChat />
     </div>
   );
 };

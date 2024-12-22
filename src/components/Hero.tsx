@@ -16,7 +16,7 @@ export const Hero = () => {
           Driving Innovation in Salesforce Projects
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 mb-8">
-          Salesforce Project Manager • 12x Certified • Trailhead Ranger • Italian Salesforce Podcast Host
+          Salesforce AI Strategic Advisor • 12x Certified • Italian Salesforce Podcast Host
         </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center mb-12">
           <Button
@@ -42,8 +42,8 @@ export const Hero = () => {
           <div className="absolute inset-0 flex flex-col items-center justify-center">
             <div className="bg-black/10 backdrop-blur-sm px-8 py-4 rounded-lg">
               <h3 className="text-white font-bold text-xl md:text-2xl tracking-wider">
-                <span>Salesforce</span> 
-                <span className="font-light italic ml-2">Sidekicks</span>
+                <span className="font-bold">Salesforce</span> 
+                <span className="font-bold italic ml-2">Sidekicks</span>
               </h3>
               <p className="text-white/80 text-sm mt-1 font-light">
                 The First Italian Salesforce Podcast
