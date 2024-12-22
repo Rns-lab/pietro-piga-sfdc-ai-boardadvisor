@@ -43,7 +43,7 @@ export const Hero = () => {
             <div className="bg-black/10 backdrop-blur-sm px-8 py-4 rounded-lg">
               <h3 className="text-white font-bold text-xl md:text-2xl tracking-wider">
                 <span className="font-bold">Salesforce</span> 
-                <span className="font-bold italic ml-2">Sidekicks</span>
+                <span className="font-bold ml-2">Sidekicks</span>
               </h3>
               <p className="text-white/80 text-sm mt-1 font-light">
                 The First Italian Salesforce Podcast
