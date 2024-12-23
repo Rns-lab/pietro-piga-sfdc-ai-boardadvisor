@@ -21,6 +21,9 @@ const Learning = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-blue-50">
+      <div className="w-full bg-sf-blue text-white py-3 text-center font-semibold">
+        Building...
+      </div>
       <div className="max-w-7xl mx-auto px-4 py-20">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-8 gradient-text">
           SideLearn: Where Curiosity Meets Expertise
