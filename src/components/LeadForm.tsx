@@ -1,8 +1,31 @@
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
+import { useNavigate } from "react-router-dom";
+import { toast } from "sonner";
 
 export const LeadForm = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
+    // Get the form data
+    const formData = new FormData(e.currentTarget);
+    
+    // Submit to Salesforce
+    fetch('https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8', {
+      method: 'POST',
+      body: formData
+    }).then(() => {
+      // Show toast and redirect
+      toast.success("Thank you for your message!", {
+        duration: 3000,
+      });
+      navigate('/');
+    });
+  };
+
   return (
     <section id="contact" className="py-20 px-4 bg-gradient-to-b from-blue-50 to-white">
       <div className="max-w-xl mx-auto">
@@ -10,8 +33,7 @@ export const LeadForm = () => {
           Let's Connect
         </h2>
         <form 
-          action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DQy00000Hh1v7" 
-          method="POST"
+          onSubmit={handleSubmit}
           className="space-y-6"
         >
           <input type="hidden" name="oid" value="00DQy00000Hh1v7" />
