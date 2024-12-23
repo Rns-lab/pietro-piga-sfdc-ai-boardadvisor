@@ -16,7 +16,7 @@ export const Hero = () => {
           Driving Innovation in Salesforce Projects
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 mb-8">
-          Salesforce AI Strategic Advisor • 12x Certified • Italian Salesforce Podcast Host
+          Salesforce AI Strategic Advisor • 12x Certified • Salesforce Sidekicks Podcast Co-Host
         </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center mb-12">
           <Button
