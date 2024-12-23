@@ -15,7 +15,7 @@ export const LeadForm = () => {
           className="space-y-6"
         >
           <input type="hidden" name="oid" value="00DQy00000Hh1v7" />
-          <input type="hidden" name="retURL" value="https://lovable.dev/projects/ff433779-32d3-4b52-860f-5f352408b4a2" />
+          <input type="hidden" name="retURL" value="/" />
 
           <div>
             <Input 
