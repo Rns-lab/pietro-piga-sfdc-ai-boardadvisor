@@ -13,7 +13,7 @@ export const LeadForm = () => {
   useEffect(() => {
     // Check if we're returning from form submission
     if (searchParams.get("retURL")) {
-      toast.custom((
+      toast.custom((id) => (
         <Alert className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white p-6 rounded-lg shadow-xl">
           <AlertTitle className="text-2xl font-bold mb-2">
             🎉 Congratulations! 🎊
