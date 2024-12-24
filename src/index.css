@@ -41,3 +41,8 @@
 .gradient-text {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-sf-blue via-sf-purple to-sf-navy;
 }
+
+/* Hide Lovable badge */
+#lovable-badge {
+  display: none !important;
+}

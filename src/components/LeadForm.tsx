@@ -1,30 +1,23 @@
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { toast } from "sonner";
 
 export const LeadForm = () => {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    
-    // Get the form data
-    const formData = new FormData(e.currentTarget);
-    
-    // Submit to Salesforce
-    fetch('https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8', {
-      method: 'POST',
-      body: formData
-    }).then(() => {
-      // Show toast and redirect
+  useEffect(() => {
+    // Check if we're returning from form submission
+    if (searchParams.get("retURL")) {
       toast.success("Thank you for your message!", {
         duration: 3000,
       });
       navigate('/');
-    });
-  };
+    }
+  }, [searchParams, navigate]);
 
   return (
     <section id="contact" className="py-20 px-4 bg-gradient-to-b from-blue-50 to-white">
@@ -33,11 +26,12 @@ export const LeadForm = () => {
           Let's Connect
         </h2>
         <form 
-          onSubmit={handleSubmit}
+          action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+          method="POST"
           className="space-y-6"
         >
           <input type="hidden" name="oid" value="00DQy00000Hh1v7" />
-          <input type="hidden" name="retURL" value="/" />
+          <input type="hidden" name="retURL" value={window.location.origin + "/?retURL=true"} />
 
           <div>
             <Input 
