@@ -4,6 +4,7 @@ import { Textarea } from "./ui/textarea";
 import { useEffect } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { toast } from "sonner";
+import { Alert, AlertTitle, AlertDescription } from "./ui/alert";
 
 export const LeadForm = () => {
   const navigate = useNavigate();
@@ -12,7 +13,16 @@ export const LeadForm = () => {
   useEffect(() => {
     // Check if we're returning from form submission
     if (searchParams.get("retURL")) {
-      toast.success("Thank you for your message!", {
+      toast.custom((
+        <Alert className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white p-6 rounded-lg shadow-xl">
+          <AlertTitle className="text-2xl font-bold mb-2">
+            🎉 Congratulations! 🎊
+          </AlertTitle>
+          <AlertDescription className="text-lg">
+            Thank you for reaching out! We'll be in touch soon! 🌟
+          </AlertDescription>
+        </Alert>
+      ), {
         duration: 3000,
       });
       navigate('/');
