@@ -56,10 +56,12 @@ const Learning = () => {
         {
           name: "Relevance AI",
           description: "A tool for building and deploying AI models to automate and enhance business processes.",
+          link: "https://relevanceai.com/"
         },
         {
           name: "Cursor AI",
           description: "An AI-powered coding assistant designed to streamline and accelerate software development.",
+          link: "https://www.cursor.com/"
         },
       ],
     },
@@ -92,7 +94,7 @@ const Learning = () => {
                           className="mt-4 text-sf-blue hover:text-sf-navy"
                           onClick={() => window.open(item.link, '_blank')}
                         >
-                          Listen <ExternalLink className="ml-2 w-4 h-4" />
+                          {section.title.includes("Podcasts") ? "Listen" : "Visit"} <ExternalLink className="ml-2 w-4 h-4" />
                         </Button>
                       )}
                     </div>
