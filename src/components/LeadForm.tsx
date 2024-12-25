@@ -26,8 +26,8 @@ export const LeadForm = () => {
         </div>
       ), {
         duration: 3000,
+        onDismiss: () => navigate('/', { replace: true })
       });
-      navigate('/');
     }
   }, [searchParams, navigate]);
 
