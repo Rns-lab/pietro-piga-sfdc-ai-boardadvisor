@@ -14,8 +14,8 @@ export const LeadForm = () => {
     // Check if we're returning from form submission
     if (searchParams.get("retURL")) {
       toast.custom((id) => (
-        <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-lg mx-auto">
-          <Alert className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white p-6 rounded-lg shadow-xl">
+        <div className="fixed top-[30vh] left-1/2 transform -translate-x-1/2 w-full max-w-lg mx-auto z-50">
+          <Alert className="bg-gradient-to-r from-blue-500/90 via-purple-500/90 to-pink-500/90 backdrop-blur-sm text-white p-6 rounded-lg shadow-xl">
             <AlertTitle className="text-2xl font-bold mb-2">
               🎉 Congratulations! 🎊
             </AlertTitle>
