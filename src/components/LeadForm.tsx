@@ -3,7 +3,6 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { useEffect } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import { toast } from "sonner";
 import { Alert, AlertTitle, AlertDescription } from "./ui/alert";
 
 export const LeadForm = () => {
@@ -11,23 +10,22 @@ export const LeadForm = () => {
   const [searchParams] = useSearchParams();
 
   useEffect(() => {
-    // Check if we're returning from form submission
     if (searchParams.get("retURL")) {
-      toast.custom((id) => (
-        <div className="fixed top-[30vh] left-1/2 transform -translate-x-1/2 w-full max-w-lg mx-auto z-50">
-          <Alert className="bg-gradient-to-r from-blue-500/90 via-purple-500/90 to-pink-500/90 backdrop-blur-sm text-white p-6 rounded-lg shadow-xl">
-            <AlertTitle className="text-2xl font-bold mb-2">
-              🎉 Congratulations! 🎊
-            </AlertTitle>
-            <AlertDescription className="text-lg">
-              Thank you for reaching out! We'll be in touch soon! 🌟
-            </AlertDescription>
-          </Alert>
+      const thankYouElement = document.createElement('div');
+      thankYouElement.innerHTML = `
+        <div class="fixed top-[30vh] left-1/2 transform -translate-x-1/2 w-full max-w-lg mx-auto z-50">
+          <div class="bg-gradient-to-r from-blue-500/90 via-purple-500/90 to-pink-500/90 backdrop-blur-sm text-white p-6 rounded-lg shadow-xl">
+            <h3 class="text-2xl font-bold mb-2">✨ Thank You for Reaching Out! ✨</h3>
+            <p class="text-lg">Your message has been received. I'll get back to you soon!</p>
+          </div>
         </div>
-      ), {
-        duration: 3000,
-        onDismiss: () => navigate('/', { replace: true })
-      });
+      `;
+      document.body.appendChild(thankYouElement);
+
+      setTimeout(() => {
+        document.body.removeChild(thankYouElement);
+        navigate('/', { replace: true });
+      }, 3000);
     }
   }, [searchParams, navigate]);
 
