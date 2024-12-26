@@ -26,7 +26,7 @@ export const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center">
-            <div className="flex space-x-8 mr-8">
+            <div className="flex space-x-8 mr-12">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
@@ -44,10 +44,10 @@ export const Navigation = () => {
               href="https://www.linkedin.com/in/pietro-piga-pm/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sf-blue hover:text-sf-navy transition-colors"
+              className="p-1 bg-[#0A66C2] rounded text-white hover:bg-[#004182] transition-colors"
               aria-label="LinkedIn Profile"
             >
-              <Linkedin className="w-6 h-6" />
+              <Linkedin className="w-5 h-5" />
             </a>
           </div>
 
@@ -86,10 +86,10 @@ export const Navigation = () => {
                 href="https://www.linkedin.com/in/pietro-piga-pm/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sf-blue hover:text-sf-navy transition-colors"
+                className="p-1 bg-[#0A66C2] rounded text-white hover:bg-[#004182] transition-colors w-fit"
                 aria-label="LinkedIn Profile"
               >
-                <Linkedin className="w-6 h-6" />
+                <Linkedin className="w-5 h-5" />
               </a>
             </div>
           </div>
