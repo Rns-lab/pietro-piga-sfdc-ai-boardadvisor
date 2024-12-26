@@ -11,28 +11,36 @@ import {
 const UseCases = () => {
   const cases = [
     {
-      title: "Dynamic Metadata Interface",
-      context: "Users needed to view and interact with metadata records stored in a custom object. The requirement was to provide an intuitive way to access and search metadata without overloading the Salesforce interface with additional custom objects.",
-      painPoint: "Creating a separate custom UI for metadata display would add unnecessary complexity. Users required dynamic, searchable tables to interact with metadata directly in Salesforce.",
-      innovation: "Instead of building a new UI, I added a table directly to the utility bar using Flow. This table dynamically displays records based on the user accessing the component. Additionally, users can perform custom searches to find metadata not linked directly to their profile (e.g., outside their country).",
-      effort: "3 weeks",
-      images: ["/lovable-uploads/509439d2-3a21-43c8-9681-b16c20f2a827.png", "/lovable-uploads/1c1877c4-9a43-499b-970f-693c8a881779.png"],
-    },
-    {
-      title: "Boosting User Adoption Through Micro-Learning",
-      context: "The end users struggled to keep up with new features and changes during each sprint release. Despite regular training sessions, the material (PDFs, PowerPoints, and long videos) was often overlooked, resulting in poor adoption of the updates.",
-      painPoint: "Users found traditional training methods time-consuming and hard to retain. Sprint releases often introduced features that went underutilized due to a lack of real-time understanding.",
-      innovation: "I implemented interactive tutorials using micro-learning techniques. Instead of delivering lengthy documents or videos, users now receive small, interactive learning modules at the moment of need. These quick, digestible tutorials guide them directly within Salesforce, reinforcing understanding on the spot.",
-      effort: "2 weeks",
-      image: "/lovable-uploads/6ebe36cf-d201-4bf5-87fc-838b82308018.png",
-    },
-    {
-      title: "Enhancing Forecasting Without Customization",
-      context: "The sales and delivery teams faced challenges in forecasting revenues and deliveries. Manual processes created bottlenecks and inconsistencies in opportunity tracking, which impacted strategic planning.",
-      painPoint: "Forecasting was inconsistent and heavily reliant on manual data entry. There was a growing demand for a scalable, automated solution without heavy customization.",
-      innovation: "I leveraged the Product Schedule feature native to Salesforce. By activating this standard feature, the team could forecast deliveries and revenues automatically for each closed opportunity. No custom development was necessary, providing a robust and scalable forecasting tool.",
+      title: "Product Schedule Feature Enhancement",
+      context: "Sales teams needed a more efficient way to manage and forecast product deliveries and revenues. The challenge was to implement this without heavy customization.",
+      painPoint: "Manual forecasting processes were creating bottlenecks and inconsistencies in opportunity tracking.",
+      innovation: "Leveraged Salesforce's native Product Schedule feature, enabling automatic delivery and revenue forecasting for each closed opportunity. This provided a scalable solution without custom development.",
       effort: "1 week",
-      images: ["/lovable-uploads/509439d2-3a21-43c8-9681-b16c20f2a827.png", "/lovable-uploads/1c1877c4-9a43-499b-970f-693c8a881779.png"],
+      images: [
+        "/lovable-uploads/525710f6-1a3e-4ae9-8794-97f6fde9e191.png",
+        "/lovable-uploads/706272ec-cd58-4c37-8a93-2ac9455ba562.png"
+      ],
+    },
+    {
+      title: "Interactive Tutorials with IoRad",
+      context: "Users struggled to keep pace with new features and changes during sprint releases. Traditional training materials were often overlooked.",
+      painPoint: "Long-format training materials (PDFs, PowerPoints, videos) weren't effective for quick feature adoption.",
+      innovation: "Implemented interactive tutorials using IoRad tool, creating micro-learning experiences that guide users directly within Salesforce. This approach significantly improved feature adoption rates.",
+      effort: "2 weeks",
+      images: [
+        "/lovable-uploads/72d115d4-41d2-4f03-9cfd-880c87b67b36.png",
+        "/lovable-uploads/1d9754e4-d22a-4381-a719-79e847bfe1bf.png"
+      ],
+    },
+    {
+      title: "Dynamic Metadata Interface",
+      context: "Users needed an intuitive way to view and interact with metadata records without overloading the Salesforce interface.",
+      painPoint: "Accessing and searching metadata required a solution that wouldn't add unnecessary complexity to the system.",
+      innovation: "Added a dynamic table to the utility bar using Flow, allowing users to view and search metadata records based on their profile, with additional search capabilities for records outside their default access.",
+      effort: "3 weeks",
+      images: [
+        "/lovable-uploads/159d81f9-34e4-4ae6-b9b1-0210dc3cbe05.png"
+      ],
     },
   ];
 
@@ -46,11 +54,11 @@ const UseCases = () => {
           Each use case represents a journey from challenge to solution, showcasing innovative approaches to real business needs.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {cases.map((case_, index) => (
             <Card key={index} className="overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col bg-white/80 backdrop-blur-sm">
               <div className="relative h-48 overflow-hidden">
-                {Array.isArray(case_.images) ? (
+                {case_.images.length > 1 ? (
                   <Carousel className="w-full">
                     <CarouselContent>
                       {case_.images.map((image, imgIndex) => (
@@ -68,7 +76,7 @@ const UseCases = () => {
                   </Carousel>
                 ) : (
                   <img
-                    src={case_.image}
+                    src={case_.images[0]}
                     alt={case_.title}
                     className="w-full h-48 object-cover"
                   />
