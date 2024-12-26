@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Linkedin } from "lucide-react";
 import { useState } from "react";
 
 export const Navigation = () => {
@@ -25,19 +25,30 @@ export const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={cn(
-                  "transition-colors hover:text-sf-blue",
-                  isActive(link.path) ? "text-sf-blue" : "text-gray-600"
-                )}
-              >
-                {link.label}
-              </Link>
-            ))}
+          <div className="hidden md:flex items-center">
+            <div className="flex space-x-8 mr-8">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={cn(
+                    "transition-colors hover:text-sf-blue",
+                    isActive(link.path) ? "text-sf-blue" : "text-gray-600"
+                  )}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+            <a
+              href="https://www.linkedin.com/in/pietro-piga-pm/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sf-blue hover:text-sf-navy transition-colors"
+              aria-label="LinkedIn Profile"
+            >
+              <Linkedin className="w-6 h-6" />
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -71,6 +82,15 @@ export const Navigation = () => {
                   {link.label}
                 </Link>
               ))}
+              <a
+                href="https://www.linkedin.com/in/pietro-piga-pm/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sf-blue hover:text-sf-navy transition-colors"
+                aria-label="LinkedIn Profile"
+              >
+                <Linkedin className="w-6 h-6" />
+              </a>
             </div>
           </div>
         )}
