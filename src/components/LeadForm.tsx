@@ -67,6 +67,17 @@ export const LeadForm = () => {
 
           <div>
             <Input 
+              id="company" 
+              maxLength={40} 
+              name="company" 
+              placeholder="Company"
+              required 
+              className="w-full p-4"
+            />
+          </div>
+
+          <div>
+            <Input 
               id="email" 
               maxLength={80} 
               name="email" 
