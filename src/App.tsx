@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import UseCases from "./pages/UseCases";
 import PodcastPage from "./pages/PodcastPage";
 import Learning from "./pages/Learning";
+import RealEstateScenario from "./pages/RealEstateScenario";
 import { Navigation } from "./components/Navigation";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/use-cases" element={<UseCases />} />
           <Route path="/podcast" element={<PodcastPage />} />
           <Route path="/learning" element={<Learning />} />
+          <Route path="/scenarios/real-estate" element={<RealEstateScenario />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
