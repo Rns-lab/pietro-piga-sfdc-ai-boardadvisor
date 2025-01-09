@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import UseCases from "./pages/UseCases";
 import PodcastPage from "./pages/PodcastPage";
 import Learning from "./pages/Learning";
+import ProjectScenarios from "./pages/ProjectScenarios";
 import RealEstateScenario from "./pages/RealEstateScenario";
 import { Navigation } from "./components/Navigation";
 
@@ -22,6 +23,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/use-cases" element={<UseCases />} />
+          <Route path="/project-scenarios" element={<ProjectScenarios />} />
           <Route path="/podcast" element={<PodcastPage />} />
           <Route path="/learning" element={<Learning />} />
           <Route path="/scenarios/real-estate" element={<RealEstateScenario />} />
