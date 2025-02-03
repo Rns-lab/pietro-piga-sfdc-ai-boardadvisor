@@ -1,7 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
-import { cn } from "@/lib/utils";
-import { Menu, X, Linkedin } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { DesktopNav } from "./navigation/DesktopNav";
+import { MobileMenu } from "./navigation/MobileMenu";
+import { NavItem } from "./navigation/types";
 
 export const Navigation = () => {
   const location = useLocation();
@@ -9,10 +11,10 @@ export const Navigation = () => {
 
   const isActive = (path: string) => location.pathname === path;
 
-  const navLinks = [
+  const navLinks: NavItem[] = [
     { path: "/", label: "Home" },
     { path: "/use-cases", label: "Use Cases" },
-    { path: "/project-scenarios", label: "AI Use Case Demo" },
+    { path: "/project-scenarios", label: "AI Demos" },
     { path: "/podcast", label: "Podcast" },
     { path: "/learning", label: "Learning" },
   ];
@@ -25,34 +27,8 @@ export const Navigation = () => {
             Pietro Piga
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center">
-            <div className="flex space-x-8 mr-16">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  className={cn(
-                    "transition-colors hover:text-sf-blue",
-                    isActive(link.path) ? "text-sf-blue" : "text-gray-600"
-                  )}
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-            <a
-              href="https://www.linkedin.com/in/pietro-piga-pm/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-1 bg-[#0A66C2] rounded text-white hover:bg-[#004182] transition-colors"
-              aria-label="LinkedIn Profile"
-            >
-              <Linkedin className="w-5 h-5" />
-            </a>
-          </div>
+          <DesktopNav navLinks={navLinks} isActive={isActive} />
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -66,35 +42,12 @@ export const Navigation = () => {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden absolute left-0 right-0 top-16 bg-white/95 backdrop-blur-sm border-b shadow-lg">
-            <div className="flex flex-col space-y-4 px-4 py-6">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  className={cn(
-                    "text-lg transition-colors hover:text-sf-blue",
-                    isActive(link.path) ? "text-sf-blue" : "text-gray-600"
-                  )}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ))}
-              <a
-                href="https://www.linkedin.com/in/pietro-piga-pm/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-1 bg-[#0A66C2] rounded text-white hover:bg-[#004182] transition-colors w-fit"
-                aria-label="LinkedIn Profile"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
-            </div>
-          </div>
-        )}
+        <MobileMenu
+          isOpen={isMenuOpen}
+          navLinks={navLinks}
+          isActive={isActive}
+          onLinkClick={() => setIsMenuOpen(false)}
+        />
       </div>
     </nav>
   );
