@@ -1,6 +1,6 @@
 
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { Building2, Bot, BrainCircuit, Briefcase, LineChart } from "lucide-react";
+import { Building2, Bot, BrainCircuit, Briefcase, Network } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const ProjectScenarios = () => {
@@ -36,9 +36,9 @@ const ProjectScenarios = () => {
     },
     {
       id: 5,
-      title: "AI Financial Analysis",
-      description: "See how AI enhances financial decision-making processes",
-      icon: <LineChart className="w-8 h-8 text-sf-blue mb-2" />,
+      title: "AI Lead Generation & Enrichment",
+      description: "Extract leads from news sources and enrich them with LinkedIn data",
+      icon: <Network className="w-8 h-8 text-sf-blue mb-2" />,
       embedUrl: "https://share.descript.com/embed/O2gC7FoeSzO"
     }
   ];
