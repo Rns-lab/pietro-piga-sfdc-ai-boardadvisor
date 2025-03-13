@@ -13,32 +13,21 @@ export const AgentforceArticle = () => {
           Expert opinions on the evolving Salesforce ecosystem and AI transformations
         </p>
         
-        <div className="bg-white rounded-xl shadow-md overflow-hidden max-w-4xl mx-auto">
-          <div className="md:flex">
-            <div className="md:flex-shrink-0 md:w-1/3">
-              <img 
-                className="h-full w-full object-cover" 
-                src="/lovable-uploads/1d9754e4-d22a-4381-a719-79e847bfe1bf.png" 
-                alt="Salesforce Ben article on Agentforce" 
-              />
-            </div>
-            <div className="p-8 md:p-10 md:w-2/3">
-              <div className="uppercase tracking-wide text-sm text-sf-blue font-semibold">Industry Interview</div>
-              <h3 className="block mt-1 text-2xl leading-tight font-bold text-gray-900">
-                What Salesforce Professionals Really Think About Agentforce
-              </h3>
-              <p className="mt-4 text-gray-600">
-                I was recently interviewed by Salesforce Ben as an AI expert to share my perspective on Agentforce and how it's reshaping the Salesforce ecosystem. Learn about the practical implications, challenges, and opportunities that this AI advancement brings to Salesforce professionals.
-              </p>
-              <div className="mt-6">
-                <Button 
-                  className="flex items-center" 
-                  onClick={() => window.open("https://www.salesforceben.com/heres-what-salesforce-professionals-really-think-about-agentforce/", "_blank")}
-                >
-                  Read the Full Article <ExternalLink className="ml-2 h-4 w-4" />
-                </Button>
-              </div>
-            </div>
+        <div className="bg-white rounded-xl shadow-md overflow-hidden max-w-4xl mx-auto p-8 md:p-10">
+          <div className="uppercase tracking-wide text-sm text-sf-blue font-semibold">Industry Interview</div>
+          <h3 className="block mt-1 text-2xl leading-tight font-bold text-gray-900">
+            What Salesforce Professionals Really Think About Agentforce
+          </h3>
+          <p className="mt-4 text-gray-600">
+            I was recently interviewed by Salesforce Ben as an AI expert to share my perspective on Agentforce and how it's reshaping the Salesforce ecosystem. Learn about the practical implications, challenges, and opportunities that this AI advancement brings to Salesforce professionals.
+          </p>
+          <div className="mt-6">
+            <Button 
+              className="flex items-center" 
+              onClick={() => window.open("https://www.salesforceben.com/heres-what-salesforce-professionals-really-think-about-agentforce/", "_blank")}
+            >
+              Read the Full Article <ExternalLink className="ml-2 h-4 w-4" />
+            </Button>
           </div>
         </div>
       </div>
