@@ -2,8 +2,20 @@
 import { Bot, Share2, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useToast } from "@/hooks/use-toast";
 
 export const SalesforceGPT = () => {
+  const { toast } = useToast();
+
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText("https://chatgpt.com/g/g-677f7aff66cc8191bb86f252a8c4c33f-project-management-gpt");
+    toast({
+      title: "Success!",
+      description: "GPT link copied!",
+      duration: 3000,
+    });
+  };
+
   return (
     <section className="py-20 bg-gradient-to-br from-purple-50 to-indigo-50 border-y border-purple-100">
       <div className="max-w-7xl mx-auto px-4">
@@ -145,7 +157,7 @@ export const SalesforceGPT = () => {
                 <Button 
                   variant="outline" 
                   className="flex-1 flex justify-center items-center gap-2 border-purple-300 text-purple-700 hover:bg-purple-50"
-                  onClick={() => window.open("mailto:pietro.piga@example.com?subject=Feedback on Salesforce PM GPT", "_blank")}
+                  onClick={() => window.open("mailto:pietropigaconsulting@gmail.com?subject=SFDC Project Management GPT Feedback", "_blank")}
                 >
                   <MessageSquare className="h-4 w-4" />
                   Leave Feedback
@@ -154,10 +166,7 @@ export const SalesforceGPT = () => {
                 <Button 
                   variant="outline" 
                   className="flex-1 flex justify-center items-center gap-2 border-purple-300 text-purple-700 hover:bg-purple-50"
-                  onClick={() => {
-                    navigator.clipboard.writeText("https://chatgpt.com/g/g-677f7aff66cc8191bb86f252a8c4c33f-project-management-gpt");
-                    // Note: In a real implementation, you'd add a toast notification here
-                  }}
+                  onClick={handleCopyLink}
                 >
                   <Share2 className="h-4 w-4" />
                   Share with Colleagues
