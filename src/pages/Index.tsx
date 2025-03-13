@@ -1,16 +1,19 @@
+
 import { Hero } from "@/components/Hero";
 import { Achievements } from "@/components/Achievements";
 import { PodcastSection } from "@/components/PodcastSection";
 import { SocialHighlights } from "@/components/SocialHighlights";
 import { LeadForm } from "@/components/LeadForm";
-import { Scenarios } from "@/components/Scenarios";
+import { AgentforceArticle } from "@/components/AgentforceArticle";
+import { SalesforceGPT } from "@/components/SalesforceGPT";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Hero />
       <Achievements />
-      <Scenarios />
+      <AgentforceArticle />
+      <SalesforceGPT />
       <PodcastSection />
       <SocialHighlights />
       <LeadForm />
