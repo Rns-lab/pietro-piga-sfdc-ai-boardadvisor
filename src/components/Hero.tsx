@@ -1,3 +1,4 @@
+
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
@@ -19,12 +20,6 @@ export const Hero = () => {
           Salesforce AI Strategic Advisor • 12x Certified • Salesforce Sidekicks Podcast Co-Host
         </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center mb-12">
-          <Button
-            className="text-lg px-8 py-6 bg-sf-blue hover:bg-sf-navy transition-all duration-300"
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            Let's Connect <ArrowRight className="ml-2" />
-          </Button>
           <Button
             variant="outline"
             className="text-lg px-8 py-6 border-sf-blue text-sf-blue hover:bg-sf-blue hover:text-white transition-all duration-300"
