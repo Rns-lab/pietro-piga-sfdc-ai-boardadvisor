@@ -1,5 +1,6 @@
+
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { Building2 } from "lucide-react";
+import { Building2, Network, Search, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export const Scenarios = () => {
@@ -27,6 +28,23 @@ export const Scenarios = () => {
                 <p className="text-gray-600">
                   Learn how luxury real estate agencies leverage AI for personalized property matching,
                   automated client engagement, and predictive market insights.
+                </p>
+              </CardContent>
+            </Card>
+          </Link>
+          <Link to="/project-scenarios" className="transform transition-all hover:scale-105">
+            <Card className="h-full">
+              <CardHeader>
+                <Network className="w-12 h-12 text-sf-blue mb-4" />
+                <CardTitle>AI Lead Generation</CardTitle>
+                <CardDescription>
+                  See how AI can extract leads from various sources and enrich them with additional data
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Explore demos of AI systems that can automatically discover leads from news sources and
+                  find the perfect people for your business needs.
                 </p>
               </CardContent>
             </Card>

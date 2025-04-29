@@ -1,6 +1,6 @@
 
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { Building2, Bot, BrainCircuit, Briefcase, Network } from "lucide-react";
+import { Building2, Bot, BrainCircuit, Briefcase, Network, Search, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const ProjectScenarios = () => {
@@ -40,6 +40,20 @@ const ProjectScenarios = () => {
       description: "Extract leads from news sources and enrich them with LinkedIn data",
       icon: <Network className="w-8 h-8 text-sf-blue mb-2" />,
       embedUrl: "https://share.descript.com/embed/O2gC7FoeSzO"
+    },
+    {
+      id: 6,
+      title: "News-Based Lead Discovery",
+      description: "Agent searching for leads by analyzing daily news sources",
+      icon: <Search className="w-8 h-8 text-sf-blue mb-2" />,
+      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7297585359138250753?compact=1"
+    },
+    {
+      id: 7,
+      title: "HR People Finder",
+      description: "Find the perfect person for any task with AI-powered talent matching",
+      icon: <Users className="w-8 h-8 text-sf-blue mb-2" />,
+      embedUrl: "https://share.descript.com/embed/2F96vlge5Rm"
     }
   ];
 
@@ -71,6 +85,7 @@ const ProjectScenarios = () => {
                           frameBorder="0"
                           allowFullScreen
                           className="w-full h-full"
+                          title={video.title}
                         />
                       </div>
                     </CardContent>
@@ -90,6 +105,7 @@ const ProjectScenarios = () => {
                         frameBorder="0"
                         allowFullScreen
                         className="w-full h-full"
+                        title={video.title}
                       />
                     </div>
                   </CardContent>
