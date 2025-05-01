@@ -9,6 +9,9 @@ import { SalesforceGPT } from "@/components/SalesforceGPT";
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <div className="bg-blue-100 py-2 px-4 text-center text-blue-800 font-medium">
+        Site updated: {new Date().toLocaleString()}
+      </div>
       <Hero />
       <Achievements />
       <AgentforceArticle />
