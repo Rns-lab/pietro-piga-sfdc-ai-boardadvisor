@@ -13,7 +13,6 @@ export const Navigation = () => {
 
   const navLinks: NavItem[] = [
     { path: "/", label: "Home" },
-    { path: "/use-cases", label: "Use Cases" },
     { path: "/project-scenarios", label: "AI Demos" },
     { path: "/podcast", label: "Podcast" },
     { path: "/learning", label: "Learning" },
