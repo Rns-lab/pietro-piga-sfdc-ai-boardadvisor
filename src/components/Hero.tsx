@@ -9,7 +9,7 @@ export const Hero = () => {
       <div className="max-w-4xl mx-auto">
         <div className="mb-8">
           <Avatar className="w-32 h-32 mx-auto mb-6">
-            <AvatarImage src="/lovable-uploads/1c1877c4-9a43-499b-970f-693c8a881779.png" alt="Profile" />
+            <AvatarImage src="/lovable-uploads/19900381-6e59-483b-af9e-129f79b3b0e9.png" alt="Profile" />
             <AvatarFallback>PP</AvatarFallback>
           </Avatar>
         </div>
