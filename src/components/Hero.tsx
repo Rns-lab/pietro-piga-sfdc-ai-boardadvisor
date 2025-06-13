@@ -8,8 +8,8 @@ export const Hero = () => {
     <div className="min-h-[80vh] flex flex-col justify-center items-center text-center px-4 bg-gradient-to-b from-white to-blue-50">
       <div className="max-w-4xl mx-auto">
         <div className="mb-8">
-          <Avatar className="w-32 h-32 mx-auto mb-6">
-            <AvatarImage src="/lovable-uploads/19900381-6e59-483b-af9e-129f79b3b0e9.png" alt="Profile" />
+          <Avatar className="w-24 h-24 mx-auto mb-6">
+            <AvatarImage src="/lovable-uploads/53cf92eb-10a9-43dd-b824-95d3892af632.png" alt="Profile" />
             <AvatarFallback>PP</AvatarFallback>
           </Avatar>
         </div>
