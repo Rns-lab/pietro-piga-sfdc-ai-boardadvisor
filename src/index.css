@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -34,17 +34,36 @@
   * {
     @apply border-border;
   }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
   body {
-    @apply bg-stone-50 text-foreground font-inter;
+    @apply bg-stone-50 text-foreground font-inter antialiased;
     font-feature-settings: "rlig" 1, "calt" 1;
     font-weight: 300;
     letter-spacing: -0.01em;
+    line-height: 1.6;
   }
   
-  h1, h2, h3 {
+  h1, h2, h3, h4, h5, h6 {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  
+  h1 {
+    @apply text-5xl lg:text-7xl;
+  }
+  
+  h2 {
+    @apply text-3xl lg:text-4xl;
+  }
+  
+  h3 {
+    @apply text-xl lg:text-2xl;
   }
 }
 
@@ -53,8 +72,8 @@
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.05);
 }
 
-.executive-text {
-  @apply text-neutral-900 font-light tracking-tight;
+.executive-gradient {
+  background: linear-gradient(135deg, #fafaf9 0%, #f5f5f4 50%, #e7e5e4 100%);
 }
 
 /* Hide Lovable badge */
@@ -62,7 +81,36 @@
   display: none !important;
 }
 
-/* Professional button styles */
-.btn-executive {
-  @apply bg-neutral-900 hover:bg-black text-stone-100 font-medium tracking-wide uppercase transition-all duration-300 shadow-xl hover:shadow-2xl;
+/* Smooth animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Custom gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #171717, #525252);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Button hover effects */
+.btn-hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
