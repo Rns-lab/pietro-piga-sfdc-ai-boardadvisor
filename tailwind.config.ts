@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -25,10 +24,11 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        sf: {
-          blue: "#00A1E0",
-          navy: "#032D60",
-          purple: "#6452F0",
+        executive: {
+          cream: "#FAF9F7",
+          charcoal: "#2C2C2C",
+          stone: "#8B8680",
+          pearl: "#F7F5F3",
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",
@@ -62,7 +62,10 @@ export default {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         playfair: ["Playfair Display", "serif"],
-        poppins: ["Poppins", "sans-serif"],
+      },
+      letterSpacing: {
+        'tighter': '-0.02em',
+        'tight': '-0.01em',
       },
       keyframes: {
         "accordion-down": {

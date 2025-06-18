@@ -4,75 +4,88 @@ import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
   return (
-    <div className="min-h-[90vh] flex flex-col justify-center items-center text-center px-4 bg-gradient-to-b from-slate-50 via-white to-blue-50/30">
-      <div className="max-w-5xl mx-auto">
-        {/* Profile Section with Enhanced Visibility */}
-        <div className="mb-10">
-          <div className="relative mx-auto mb-8 w-40 h-56 rounded-2xl overflow-hidden shadow-2xl ring-4 ring-slate-200/50">
+    <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-stone-50 to-neutral-100 px-4">
+      <div className="max-w-6xl mx-auto">
+        {/* Executive Profile Section */}
+        <div className="text-center mb-16">
+          {/* Large, Prominent Profile Image */}
+          <div className="relative mx-auto mb-12 w-48 h-64 rounded-lg overflow-hidden shadow-2xl">
             <img 
               src="/lovable-uploads/53cf92eb-10a9-43dd-b824-95d3892af632.png" 
-              alt="Pietro Piga - Senior Salesforce Expert" 
+              alt="Pietro Piga - Senior Salesforce Executive" 
               className="w-full h-full object-cover object-center"
             />
-            {/* Subtle overlay for warmth */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
           </div>
           
-          {/* Trust indicators */}
-          <div className="flex items-center justify-center gap-3 text-sm text-slate-600 mb-4">
-            <span className="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full font-medium">12+ Years Experience</span>
-            <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-medium">12x Certified</span>
-            <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full font-medium">AI Strategic Advisor</span>
+          {/* Executive Credentials */}
+          <div className="mb-8">
+            <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
+              <span className="bg-neutral-900 text-stone-100 px-4 py-2 text-sm font-medium tracking-wide uppercase">
+                12+ Years Experience
+              </span>
+              <span className="bg-stone-800 text-stone-100 px-4 py-2 text-sm font-medium tracking-wide uppercase">
+                12x Certified Expert
+              </span>
+              <span className="bg-neutral-700 text-stone-100 px-4 py-2 text-sm font-medium tracking-wide uppercase">
+                AI Strategic Advisor
+              </span>
+            </div>
+          </div>
+
+          {/* Executive Headlines */}
+          <div className="space-y-6">
+            <h1 className="text-5xl md:text-7xl font-light text-neutral-900 leading-none tracking-tight">
+              Pietro Piga
+            </h1>
+            
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-2xl md:text-3xl font-normal text-neutral-700 mb-4 leading-relaxed">
+                Senior Salesforce Architect & AI Innovation Leader
+              </h2>
+              
+              <p className="text-lg md:text-xl text-neutral-600 font-light leading-relaxed max-w-3xl mx-auto">
+                Driving digital transformation for Fortune 500 enterprises through strategic Salesforce implementations and cutting-edge AI integration
+              </p>
+            </div>
+          </div>
+
+          {/* Executive Action */}
+          <div className="mt-12">
+            <Button
+              size="lg"
+              className="bg-neutral-900 hover:bg-black text-stone-100 px-12 py-4 text-base font-medium tracking-wide uppercase shadow-xl hover:shadow-2xl transition-all duration-300 rounded-none"
+              onClick={() => window.open('https://www.salesforce.com/trailblazer/pietropiga', '_blank')}
+            >
+              View Executive Profile <ArrowRight className="ml-3 w-5 h-5" />
+            </Button>
           </div>
         </div>
 
-        {/* Headlines optimized for psychological impact */}
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-          <span className="block text-slate-800 mb-2">Senior Salesforce Expert</span>
-          <span className="block bg-gradient-to-r from-blue-600 via-blue-700 to-slate-700 bg-clip-text text-transparent">
-            Driving Enterprise Innovation
-          </span>
-        </h1>
-        
-        <p className="text-xl md:text-2xl text-slate-600 mb-4 font-medium max-w-4xl mx-auto leading-relaxed">
-          Proven track record of delivering complex Salesforce transformations for Fortune 500 companies
-        </p>
-        
-        <p className="text-lg text-slate-500 mb-10 max-w-3xl mx-auto">
-          Strategic AI Advisor • Industry Pioneer • Podcast Host • Thought Leader
-        </p>
-
-        {/* Authority-building CTA */}
-        <div className="flex flex-col md:flex-row gap-4 justify-center mb-16">
-          <Button
-            size="lg"
-            className="text-lg px-10 py-6 bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 font-semibold"
-            onClick={() => window.open('https://www.salesforce.com/trailblazer/pietropiga', '_blank')}
-          >
-            View My Expert Profile <ArrowRight className="ml-2" />
-          </Button>
-        </div>
-
-        {/* Enhanced Podcast Section with Authority */}
-        <div className="max-w-4xl mx-auto relative">
-          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl overflow-hidden shadow-2xl">
+        {/* Podcast Authority Section */}
+        <div className="max-w-5xl mx-auto">
+          <div className="relative bg-neutral-900 overflow-hidden shadow-2xl">
             <img 
               src="/lovable-uploads/6ebe36cf-d201-4bf5-87fc-838b82308018.png" 
-              alt="Salesforce Sidekicks Podcast - Industry Leadership" 
-              className="w-full h-64 md:h-80 object-cover opacity-75"
+              alt="Salesforce Sidekicks Podcast - Industry Authority" 
+              className="w-full h-72 md:h-96 object-cover opacity-60"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent"></div>
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8">
-              <div className="bg-white/10 backdrop-blur-md px-8 py-6 rounded-xl border border-white/20">
-                <h3 className="text-white font-bold text-2xl md:text-3xl tracking-wide mb-2">
-                  <span className="text-blue-300">Salesforce</span> 
-                  <span className="text-white ml-2">Sidekicks</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/50"></div>
+            <div className="absolute inset-0 flex items-center justify-start p-12 md:p-16">
+              <div className="max-w-2xl">
+                <div className="mb-4">
+                  <span className="text-stone-300 text-sm font-medium tracking-widest uppercase">
+                    Industry Pioneer
+                  </span>
+                </div>
+                <h3 className="text-3xl md:text-5xl font-light text-stone-100 mb-4 leading-tight">
+                  Salesforce Sidekicks
                 </h3>
-                <p className="text-blue-100 text-base font-medium mb-3">
+                <p className="text-lg text-stone-300 font-light leading-relaxed mb-2">
                   The First Italian Salesforce Podcast
                 </p>
-                <p className="text-white/80 text-sm max-w-md">
-                  Leading industry conversations with top Salesforce professionals and innovators
+                <p className="text-stone-400 text-base leading-relaxed">
+                  Leading strategic conversations with C-level executives and Salesforce innovators across Europe
                 </p>
               </div>
             </div>
