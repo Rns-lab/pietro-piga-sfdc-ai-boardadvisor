@@ -30,7 +30,7 @@ export const Hero = () => {
                 </h2>
                 <p className="text-lg text-slate-500 leading-relaxed max-w-xl">
                   Independent advisor specializing in enterprise transformation through 
-                  <span className="text-slate-900 font-medium"> AI-native strategies</span> 
+                  <span className="text-slate-900 font-medium"> AI-native strategies </span> 
                   and sophisticated Salesforce architecture.
                 </p>
               </div>
