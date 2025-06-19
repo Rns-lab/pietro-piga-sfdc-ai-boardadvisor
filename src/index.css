@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Playfair+Display:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -52,6 +52,10 @@
     font-weight: 300;
     letter-spacing: -0.02em;
     line-height: 1.2;
+  }
+  
+  .font-serif {
+    font-family: 'Playfair Display', serif;
   }
   
   h1 {
@@ -113,4 +117,9 @@
 .btn-hover-lift:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Spotlight effect */
+.bg-gradient-radial {
+  background: radial-gradient(var(--tw-gradient-stops));
 }

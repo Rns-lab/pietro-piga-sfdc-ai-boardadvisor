@@ -63,6 +63,7 @@ export default {
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        serif: ["Playfair Display", "serif"],
       },
       fontSize: {
         '7xl': ['4.5rem', { lineHeight: '1', letterSpacing: '-0.02em' }],
