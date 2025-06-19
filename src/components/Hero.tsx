@@ -1,5 +1,5 @@
 
-import { ArrowRight, Shield } from "lucide-react";
+import { ArrowRight, Shield, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
@@ -47,8 +47,8 @@ export const Hero = () => {
                 </div>
               </div>
               
-              {/* CTA Button */}
-              <div className="pt-4">
+              {/* CTA Buttons */}
+              <div className="pt-4 flex flex-col sm:flex-row gap-4">
                 <a 
                   href="https://www.linkedin.com/in/pietro-piga-pm/"
                   target="_blank"
@@ -59,6 +59,18 @@ export const Hero = () => {
                     className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 text-base font-medium rounded-lg btn-hover"
                   >
                     View Professional Profile <ArrowRight className="ml-2 w-5 h-5" />
+                  </Button>
+                </a>
+                <a 
+                  href="/lovable-uploads/cv-pietro-piga-2025.pdf"
+                  download="Pietro_Piga_CV_2025.pdf"
+                >
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="border-slate-300 text-slate-700 hover:bg-slate-50 px-8 py-4 text-base font-medium rounded-lg btn-hover"
+                  >
+                    Download CV <Download className="ml-2 w-5 h-5" />
                   </Button>
                 </a>
               </div>

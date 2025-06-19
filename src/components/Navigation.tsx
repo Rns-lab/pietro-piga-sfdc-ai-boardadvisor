@@ -1,3 +1,4 @@
+
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -22,7 +23,7 @@ export const Navigation = () => {
     <nav className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-sm border-b">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="font-bold text-xl text-sf-blue">
+          <Link to="/" className="font-bold text-xl text-slate-700">
             Pietro Piga
           </Link>
 
@@ -34,9 +35,9 @@ export const Navigation = () => {
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
-              <X className="h-6 w-6 text-gray-600" />
+              <X className="h-6 w-6 text-slate-600" />
             ) : (
-              <Menu className="h-6 w-6 text-gray-600" />
+              <Menu className="h-6 w-6 text-slate-600" />
             )}
           </button>
         </div>
