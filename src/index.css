@@ -19,7 +19,7 @@
     --secondary-foreground: 51 65 85;
     --muted: 248 250 252;
     --muted-foreground: 100 116 139;
-    --accent: 241 245 249;
+    --accent: 226 232 240;
     --accent-foreground: 51 65 85;
     --destructive: 239 68 68;
     --destructive-foreground: 248 250 252;
@@ -27,6 +27,10 @@
     --input: 226 232 240;
     --ring: 15 23 42;
     --radius: 0.5rem;
+    --cold-accent: 148 163 184;
+    --navy: 30 41 59;
+    --slate-blue: 100 116 139;
+    --arctic: 248 250 252;
   }
 }
 
@@ -109,4 +113,10 @@
 .btn-hover:hover {
   transform: translateY(-1px);
   box-shadow: 0 4px 20px rgba(15, 23, 42, 0.15);
+}
+
+/* Cold accent blockquote styling */
+.testimonial-quote {
+  border-left: 3px solid rgb(148 163 184);
+  background: linear-gradient(135deg, rgba(248, 250, 252, 0.8), rgba(241, 245, 249, 0.6));
 }

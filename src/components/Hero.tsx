@@ -29,21 +29,17 @@ export const Hero = () => {
                   For Enterprise Transformation
                 </h2>
                 <p className="text-lg text-slate-500 leading-relaxed max-w-xl">
-                  Independent advisor with 20+ years transforming Fortune 500 enterprises through 
+                  Independent advisor specializing in enterprise transformation through 
                   <span className="text-slate-900 font-medium"> AI-native strategies</span> 
                   and sophisticated Salesforce architecture.
                 </p>
               </div>
               
-              {/* Trust Metrics */}
-              <div className="grid grid-cols-3 gap-8 py-8 border-t border-b border-slate-200">
+              {/* Trust Metrics - Simplified and Verified */}
+              <div className="grid grid-cols-2 gap-8 py-8 border-t border-b border-slate-200">
                 <div className="space-y-1">
-                  <div className="text-3xl lg:text-4xl font-semibold text-slate-900">20+</div>
-                  <div className="text-sm text-slate-500 font-medium">Years Enterprise Focus</div>
-                </div>
-                <div className="space-y-1">
-                  <div className="text-3xl lg:text-4xl font-semibold text-slate-900">€50M+</div>
-                  <div className="text-sm text-slate-500 font-medium">Client Value Generated</div>
+                  <div className="text-3xl lg:text-4xl font-semibold text-slate-900">Enterprise</div>
+                  <div className="text-sm text-slate-500 font-medium">Transformation Focus</div>
                 </div>
                 <div className="space-y-1">
                   <div className="text-3xl lg:text-4xl font-semibold text-slate-900">12x</div>
@@ -82,9 +78,9 @@ export const Hero = () => {
                 {/* Floating Achievement Card */}
                 <div className="absolute -bottom-6 -left-6 bg-white border border-slate-200 text-slate-900 rounded-xl p-6 shadow-lg max-w-xs">
                   <div className="space-y-2">
-                    <div className="font-semibold text-sm">Ex-Salesforce Advisor</div>
-                    <div className="text-slate-600 text-xs">AI-Native Strategist</div>
-                    <div className="text-slate-500 text-xs">Enterprise Transformation Leader</div>
+                    <div className="font-bold text-sm">Enterprise Transformation Leader</div>
+                    <div className="text-slate-600 text-xs">Relevance AI Sales Solutions Expert</div>
+                    <div className="text-slate-500 text-xs">Strategic Architecture Specialist</div>
                   </div>
                 </div>
               </div>

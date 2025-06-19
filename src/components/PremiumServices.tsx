@@ -19,7 +19,7 @@ const expertise = [
   {
     icon: Users,
     title: "Executive Advisory",
-    description: "Board-level strategic consulting for digital transformation initiatives",
+    description: "Strategic consulting for digital transformation initiatives",
     features: ["Strategic Planning", "Change Leadership", "Performance Analytics"],
   }
 ];
@@ -41,7 +41,7 @@ export const PremiumServices = () => {
 
         {/* Expertise Grid */}
         <div className="grid lg:grid-cols-3 gap-8 mb-16">
-          {expertise.map((area, index) => (
+          {expertise.map((area) => (
             <Card key={area.title} className="bg-white border-slate-200 p-8 hover:shadow-lg transition-all duration-300">
               <div className="space-y-6">
                 <div className="space-y-4">

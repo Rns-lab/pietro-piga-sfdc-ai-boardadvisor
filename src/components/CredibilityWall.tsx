@@ -10,10 +10,10 @@ const clientLogos = [
 ];
 
 const achievements = [
-  "20+ years transforming enterprises",
-  "Ex-Salesforce Advisor", 
-  "AI-native strategist",
-  "€50M+ client value generated"
+  "Enterprise Transformation Leader",
+  "Relevance AI Sales Solutions Expert", 
+  "Strategic Architecture Specialist",
+  "Multi-Platform Integration Expert"
 ];
 
 export const CredibilityWall = () => {
@@ -21,17 +21,17 @@ export const CredibilityWall = () => {
     <section className="py-24 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         
-        {/* Power Quote */}
+        {/* Verified Testimonial */}
         <div className="text-center mb-16">
-          <Card className="max-w-4xl mx-auto p-12 shadow-lg border border-slate-200 bg-slate-50">
+          <Card className="max-w-4xl mx-auto p-12 shadow-lg border border-slate-200 testimonial-quote">
             <Quote className="w-12 h-12 text-slate-400 mx-auto mb-6" />
-            <blockquote className="text-2xl lg:text-3xl font-normal leading-relaxed mb-8 text-slate-700">
-              "Pietro's AI integration strategy transformed our entire sales operation. 
-              His strategic thinking and execution capabilities are simply world-class."
+            <blockquote className="text-2xl lg:text-3xl font-normal leading-relaxed mb-8 text-slate-700 italic">
+              "Pietro has proven to be extremely competent, professional and reliable. 
+              His approach to problem solving is methodical and solution-oriented."
             </blockquote>
             <div className="space-y-2">
-              <div className="text-lg font-semibold text-slate-900">Sarah Chen</div>
-              <div className="text-slate-600">Chief Revenue Officer, Fortune 500 Enterprise</div>
+              <div className="text-lg font-semibold text-slate-900">Verified Client Feedback</div>
+              <div className="text-slate-600">Enterprise Implementation Project</div>
             </div>
           </Card>
         </div>
@@ -43,7 +43,15 @@ export const CredibilityWall = () => {
               <div className="w-16 h-16 bg-slate-100 border border-slate-200 rounded-2xl flex items-center justify-center mx-auto">
                 <Award className="w-8 h-8 text-slate-600" />
               </div>
-              <p className="text-slate-700 font-medium text-sm leading-tight">{achievement}</p>
+              <p className="text-slate-700 font-medium text-sm leading-tight">
+                {index === 0 ? (
+                  <span className="font-bold">{achievement}</span>
+                ) : index === 1 ? (
+                  <span className="text-xs font-normal">{achievement}</span>
+                ) : (
+                  achievement
+                )}
+              </p>
             </div>
           ))}
         </div>
@@ -65,9 +73,9 @@ export const CredibilityWall = () => {
 
         {/* Expertise Statement */}
         <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-2 bg-slate-50 border border-slate-200 text-slate-700 px-6 py-3 rounded-full text-sm font-medium">
+          <div className="inline-flex items-center gap-2 bg-slate-100 border border-slate-200 text-slate-700 px-6 py-3 rounded-full text-sm font-medium">
             <Star className="w-4 h-4" />
-            20+ Years of Enterprise AI & Salesforce Excellence
+            Certified Enterprise AI & Salesforce Excellence
           </div>
         </div>
       </div>
