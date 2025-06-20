@@ -16,7 +16,7 @@ const ProjectScenarios = () => {
       title: "Salesforce AI Innovation",
       description: "Latest insights and innovations in Salesforce AI technology",
       icon: <Lightbulb className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
-      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:share:7249394123458105344"
+      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7249393532149391360?compact=1"
     },
     {
       id: 7,
