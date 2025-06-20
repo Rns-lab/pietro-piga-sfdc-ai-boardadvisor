@@ -1,15 +1,22 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { Building2, Bot, BrainCircuit, Briefcase, Network, Search, Users, Zap } from "lucide-react";
+import { Building2, Bot, BrainCircuit, Briefcase, Network, Search, Users, Zap, Lightbulb } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const ProjectScenarios = () => {
   const videos = [
     {
-      id: 8,
+      id: 9,
       title: "AI-Powered Sales Automation",
       description: "Comprehensive AI sales solution demonstrating advanced automation capabilities",
       icon: <Zap className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
       embedUrl: "https://share.descript.com/embed/pQYEh4a2NxR"
+    },
+    {
+      id: 8,
+      title: "Salesforce AI Innovation",
+      description: "Latest insights and innovations in Salesforce AI technology",
+      icon: <Lightbulb className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
+      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:share:7249394123458105344"
     },
     {
       id: 7,
