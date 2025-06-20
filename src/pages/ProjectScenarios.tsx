@@ -1,4 +1,3 @@
-
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Building2, Bot, BrainCircuit, Briefcase, Network, Search, Users, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -6,47 +5,11 @@ import { Link } from "react-router-dom";
 const ProjectScenarios = () => {
   const videos = [
     {
-      id: 1,
-      title: "AI-Powered Real Estate Assistant",
-      description: "Experience how AI transforms luxury real estate operations with personalized property matching",
-      icon: <Building2 className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
-      url: "/scenarios/real-estate",
-      embedUrl: "https://www.loom.com/embed/f59567f25401489aa6a794507b328e69"
-    },
-    {
-      id: 2,
-      title: "Smart Contract Management",
-      description: "See how AI streamlines contract review and management processes",
-      icon: <Briefcase className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
-      embedUrl: "https://www.loom.com/embed/16880e17ad9c45c8a66cb5b4536dfd12"
-    },
-    {
-      id: 3,
-      title: "Intelligent Data Analysis",
-      description: "Watch AI transform complex data into actionable insights",
-      icon: <BrainCircuit className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
-      embedUrl: "https://www.loom.com/embed/f513a9fbab8e4622b7bfa6873d910124"
-    },
-    {
-      id: 4,
-      title: "AI Customer Service Enhancement",
-      description: "Discover how AI revolutionizes customer service interactions",
-      icon: <Bot className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
-      embedUrl: "https://share.descript.com/embed/d6odQh44Z6n"
-    },
-    {
-      id: 5,
-      title: "AI Lead Generation & Enrichment",
-      description: "Extract leads from news sources and enrich them with LinkedIn data",
-      icon: <Network className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
-      embedUrl: "https://share.descript.com/embed/O2gC7FoeSzO"
-    },
-    {
-      id: 6,
-      title: "News-Based Lead Discovery",
-      description: "Agent searching for leads by analyzing daily news sources",
-      icon: <Search className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
-      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7297585359138250753?compact=1"
+      id: 8,
+      title: "AI-Powered Sales Automation",
+      description: "Comprehensive AI sales solution demonstrating advanced automation capabilities",
+      icon: <Zap className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
+      embedUrl: "https://share.descript.com/embed/pQYEh4a2NxR"
     },
     {
       id: 7,
@@ -56,11 +19,47 @@ const ProjectScenarios = () => {
       embedUrl: "https://share.descript.com/embed/2F96vlge5Rm"
     },
     {
-      id: 8,
-      title: "AI-Powered Sales Automation",
-      description: "Comprehensive AI sales solution demonstrating advanced automation capabilities",
-      icon: <Zap className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
-      embedUrl: "https://share.descript.com/embed/pQYEh4a2NxR"
+      id: 6,
+      title: "News-Based Lead Discovery",
+      description: "Agent searching for leads by analyzing daily news sources",
+      icon: <Search className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
+      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7297585359138250753?compact=1"
+    },
+    {
+      id: 5,
+      title: "AI Lead Generation & Enrichment",
+      description: "Extract leads from news sources and enrich them with LinkedIn data",
+      icon: <Network className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
+      embedUrl: "https://share.descript.com/embed/O2gC7FoeSzO"
+    },
+    {
+      id: 4,
+      title: "AI Customer Service Enhancement",
+      description: "Discover how AI revolutionizes customer service interactions",
+      icon: <Bot className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
+      embedUrl: "https://share.descript.com/embed/d6odQh44Z6n"
+    },
+    {
+      id: 3,
+      title: "Intelligent Data Analysis",
+      description: "Watch AI transform complex data into actionable insights",
+      icon: <BrainCircuit className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
+      embedUrl: "https://www.loom.com/embed/f513a9fbab8e4622b7bfa6873d910124"
+    },
+    {
+      id: 2,
+      title: "Smart Contract Management",
+      description: "See how AI streamlines contract review and management processes",
+      icon: <Briefcase className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
+      embedUrl: "https://www.loom.com/embed/16880e17ad9c45c8a66cb5b4536dfd12"
+    },
+    {
+      id: 1,
+      title: "AI-Powered Real Estate Assistant",
+      description: "Experience how AI transforms luxury real estate operations with personalized property matching",
+      icon: <Building2 className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
+      url: "/scenarios/real-estate",
+      embedUrl: "https://www.loom.com/embed/f59567f25401489aa6a794507b328e69"
     }
   ];
 
