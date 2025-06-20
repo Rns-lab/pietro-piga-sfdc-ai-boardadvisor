@@ -81,7 +81,7 @@ const ProjectScenarios = () => {
             <div key={video.id} className="transform transition-all hover:scale-105">
               {video.url ? (
                 <Link to={video.url}>
-                  <Card className="h-full border-slate-200 hover:border-slate-300 transition-colors">
+                  <Card className="h-full border-slate-200 hover:border-slate-300 transition-colors bg-slate-50">
                     <CardHeader className="space-y-2 pb-4 p-4 sm:p-6">
                       {video.icon}
                       <CardTitle className="text-base sm:text-lg text-slate-900">{video.title}</CardTitle>
@@ -101,7 +101,7 @@ const ProjectScenarios = () => {
                   </Card>
                 </Link>
               ) : (
-                <Card className="h-full border-slate-200 hover:border-slate-300 transition-colors">
+                <Card className="h-full border-slate-200 hover:border-slate-300 transition-colors bg-slate-50">
                   <CardHeader className="space-y-2 pb-4 p-4 sm:p-6">
                     {video.icon}
                     <CardTitle className="text-base sm:text-lg text-slate-900">{video.title}</CardTitle>
