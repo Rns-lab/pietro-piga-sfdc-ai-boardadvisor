@@ -47,21 +47,15 @@ export const SalesforceExpertise = () => {
                     <p className="text-slate-600 mb-4">
                       {item.description}
                     </p>
-                    <Button 
-                      asChild 
-                      variant="outline" 
-                      className="group hover:bg-blue-50 hover:border-blue-200"
+                    <a 
+                      href={item.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 border border-slate-300 rounded-md text-sm font-medium text-slate-700 bg-white hover:bg-blue-50 hover:border-blue-200 transition-colors group"
                     >
-                      <a 
-                        href={item.url} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2"
-                      >
-                        {item.type === 'video' ? 'Watch Video' : 'Read Article'}
-                        <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                      </a>
-                    </Button>
+                      {item.type === 'video' ? 'Watch Video' : 'Read Article'}
+                      <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </a>
                   </div>
                 </div>
               </CardContent>
