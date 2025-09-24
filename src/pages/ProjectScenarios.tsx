@@ -5,70 +5,98 @@ import { Link } from "react-router-dom";
 const ProjectScenarios = () => {
   const videos = [
     {
-      id: 9,
+      id: 12,
       title: "AI-Powered Sales Automation",
       description: "Comprehensive AI sales solution demonstrating advanced automation capabilities",
       icon: <Zap className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
       embedUrl: "https://share.descript.com/embed/pQYEh4a2NxR"
     },
     {
-      id: 8,
-      title: "Salesforce AI Innovation",
-      description: "Latest insights and innovations in Salesforce AI technology",
+      id: 11,
+      title: "Salesforce Ben YouTube Feature",
+      description: "Featured discussion on Salesforce innovations and AI implementation strategies",
+      icon: <Lightbulb className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
+      embedUrl: "https://www.youtube.com/embed/your-video-id"
+    },
+    {
+      id: 10,
+      title: "Salesforce Ben Article Feature",
+      description: "Featured article highlighting AI expertise and Salesforce ecosystem insights",
       icon: <Lightbulb className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
       embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7249393532149391360?compact=1"
     },
     {
+      id: 9,
+      title: "Advanced AI Demo #3",
+      description: "Latest AI implementation showcasing cutting-edge automation capabilities",
+      icon: <BrainCircuit className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
+      embedUrl: "https://share.descript.com/embed/pTqZm2oylAq"
+    },
+    {
+      id: 8,
+      title: "Advanced AI Demo #2",
+      description: "Comprehensive AI solution demonstrating enterprise-level automation",
+      icon: <Network className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
+      embedUrl: "https://share.descript.com/embed/3xowrwNEGsP"
+    },
+    {
       id: 7,
+      title: "Advanced AI Demo #1",
+      description: "Revolutionary AI implementation showcasing next-generation capabilities",
+      icon: <Zap className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
+      embedUrl: "https://share.descript.com/embed/oBl5d3fGjyx"
+    },
+    {
+      id: 6,
       title: "Keith AI Sales Assistant",
       description: "An agent that makes outbound reach calls, set appointments, sell products, send emails and make lead assessment",
       icon: <Bot className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
       embedUrl: "https://share.descript.com/embed/SNyDyynfdb2"
     },
     {
-      id: 6,
+      id: 5,
       title: "HR People Finder",
       description: "Find the perfect person for any task with AI-powered talent matching",
       icon: <Users className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
       embedUrl: "https://share.descript.com/embed/2F96vlge5Rm"
     },
     {
-      id: 5,
+      id: 4,
       title: "News-Based Lead Discovery",
       description: "Agent searching for leads by analyzing daily news sources",
       icon: <Search className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
       embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7297585359138250753?compact=1"
     },
     {
-      id: 4,
+      id: 3,
       title: "AI Lead Generation & Enrichment",
       description: "Extract leads from news sources and enrich them with LinkedIn data",
       icon: <Network className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
       embedUrl: "https://share.descript.com/embed/O2gC7FoeSzO"
     },
     {
-      id: 3,
+      id: 2,
       title: "AI Customer Service Enhancement",
       description: "Discover how AI revolutionizes customer service interactions",
       icon: <Bot className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
       embedUrl: "https://share.descript.com/embed/d6odQh44Z6n"
     },
     {
-      id: 2,
+      id: 1,
       title: "Intelligent Data Analysis",
       description: "Watch AI transform complex data into actionable insights",
       icon: <BrainCircuit className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
       embedUrl: "https://www.loom.com/embed/f513a9fbab8e4622b7bfa6873d910124"
     },
     {
-      id: 1,
+      id: 0,
       title: "Smart Contract Management",
       description: "See how AI streamlines contract review and management processes",
       icon: <Briefcase className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
       embedUrl: "https://www.loom.com/embed/16880e17ad9c45c8a66cb5b4536dfd12"
     },
     {
-      id: 0,
+      id: -1,
       title: "AI-Powered Real Estate Assistant",
       description: "Experience how AI transforms luxury real estate operations with personalized property matching",
       icon: <Building2 className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
