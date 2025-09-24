@@ -13,8 +13,8 @@ const ProjectScenarios = () => {
     },
     {
       id: 10,
-      title: "Salesforce Ben Article Feature",
-      description: "Featured article highlighting AI expertise and Salesforce ecosystem insights",
+      title: "Salesforce Canvas - A smarter way to interact with Salesforce",
+      description: "Revolutionary interface enhancement for more intuitive Salesforce interactions",
       icon: <Lightbulb className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
       embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7249393532149391360?compact=1"
     },
