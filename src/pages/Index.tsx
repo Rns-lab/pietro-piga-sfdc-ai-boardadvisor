@@ -4,6 +4,7 @@ import { CredibilityWall } from "@/components/CredibilityWall";
 import { RecentMilestone } from "@/components/RecentMilestone";
 import { FeaturedDemo } from "@/components/FeaturedDemo";
 import { PremiumServices } from "@/components/PremiumServices";
+import { SalesforceExpertise } from "@/components/SalesforceExpertise";
 
 const Index = () => {
   return (
@@ -11,6 +12,7 @@ const Index = () => {
       <Hero />
       <RecentMilestone />
       <CredibilityWall />
+      <SalesforceExpertise />
       <FeaturedDemo />
       <PremiumServices />
     </div>

@@ -12,13 +12,6 @@ const ProjectScenarios = () => {
       embedUrl: "https://share.descript.com/embed/pQYEh4a2NxR"
     },
     {
-      id: 11,
-      title: "Salesforce Ben YouTube Feature",
-      description: "Featured discussion on Salesforce innovations and AI implementation strategies",
-      icon: <Lightbulb className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
-      embedUrl: "https://www.youtube.com/embed/your-video-id"
-    },
-    {
       id: 10,
       title: "Salesforce Ben Article Feature",
       description: "Featured article highlighting AI expertise and Salesforce ecosystem insights",
@@ -27,22 +20,22 @@ const ProjectScenarios = () => {
     },
     {
       id: 9,
-      title: "Advanced AI Demo #3",
-      description: "Latest AI implementation showcasing cutting-edge automation capabilities",
+      title: "HR Research Agent",
+      description: "AI-powered research assistant for finding and analyzing talent profiles",
       icon: <BrainCircuit className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
       embedUrl: "https://share.descript.com/embed/pTqZm2oylAq"
     },
     {
       id: 8,
-      title: "Advanced AI Demo #2",
-      description: "Comprehensive AI solution demonstrating enterprise-level automation",
+      title: "Salesforce Chatbase free integration",
+      description: "Free integration solution connecting Salesforce with Chatbase platform",
       icon: <Network className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
       embedUrl: "https://share.descript.com/embed/3xowrwNEGsP"
     },
     {
       id: 7,
-      title: "Advanced AI Demo #1",
-      description: "Revolutionary AI implementation showcasing next-generation capabilities",
+      title: "Prometheia - Light Up your Sales with your PhD Ai Team",
+      description: "Advanced AI team solution designed to enhance your sales performance",
       icon: <Zap className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
       embedUrl: "https://share.descript.com/embed/oBl5d3fGjyx"
     },
