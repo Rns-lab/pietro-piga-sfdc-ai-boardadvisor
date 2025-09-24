@@ -34,32 +34,36 @@ export const SalesforceExpertise = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {expertiseLinks.map((item, index) => (
-            <Card key={index} className="border-slate-200 hover:border-slate-300 transition-all hover:shadow-lg bg-white">
-              <CardContent className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="p-2 bg-blue-50 rounded-lg text-blue-600">
-                    {item.icon}
+            <a
+              key={index}
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${item.type === 'video' ? 'Watch' : 'Read'}: ${item.title}`}
+              className="block group focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-300 rounded-lg"
+            >
+              <Card className="border-slate-200 group-hover:border-blue-300 transition-all hover:shadow-lg bg-white">
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="p-2 bg-blue-50 rounded-lg text-blue-600">
+                      {item.icon}
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-semibold text-slate-900 mb-2">
+                        {item.title}
+                      </h3>
+                      <p className="text-slate-600 mb-4">
+                        {item.description}
+                      </p>
+                      <div className="inline-flex items-center gap-2 px-4 py-2 border border-slate-300 rounded-md text-sm font-medium text-slate-700 bg-white group-hover:bg-blue-50 group-hover:border-blue-200 transition-colors">
+                        {item.type === 'video' ? 'Watch Video' : 'Read Article'}
+                        <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-slate-900 mb-2">
-                      {item.title}
-                    </h3>
-                    <p className="text-slate-600 mb-4">
-                      {item.description}
-                    </p>
-                    <a 
-                      href={item.url} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 border border-slate-300 rounded-md text-sm font-medium text-slate-700 bg-white hover:bg-blue-50 hover:border-blue-200 transition-colors group"
-                    >
-                      {item.type === 'video' ? 'Watch Video' : 'Read Article'}
-                      <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </a>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </a>
           ))}
         </div>
       </div>
