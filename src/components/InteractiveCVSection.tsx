@@ -1,9 +1,10 @@
 import { MessageCircle, QrCode } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import qrCodeImage from "@/assets/pietro-interactive-cv-qr.png";
+import QRCode from "react-qr-code";
 
 export const InteractiveCVSection = () => {
+  const agentUrl = "https://chatgpt.com/g/g-68d65b115af88191a21d5c55b2bf4ad4-pietro-piga-interactive-cv";
   return (
     <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-slate-100">
       <div className="max-w-6xl mx-auto px-6">
@@ -44,14 +45,20 @@ export const InteractiveCVSection = () => {
                 </div>
               </div>
               
-              <Button 
-                size="lg" 
-                className="w-full bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 text-base font-medium rounded-lg"
-                onClick={() => window.open('https://chatgpt.com/g/g-68d65b115af88191a21d5c55b2bf4ad4-pietro-piga-interactive-cv', '_blank', 'noopener,noreferrer')}
+              <a 
+                href={agentUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block w-full"
               >
-                <MessageCircle className="mr-2 w-5 h-5" />
-                Start Interactive Conversation
-              </Button>
+                <Button 
+                  size="lg" 
+                  className="w-full bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 text-base font-medium rounded-lg"
+                >
+                  <MessageCircle className="mr-2 w-5 h-5" />
+                  Start Interactive Conversation
+                </Button>
+              </a>
             </CardContent>
           </Card>
 
@@ -65,13 +72,23 @@ export const InteractiveCVSection = () => {
               Scan this QR code with your mobile device to instantly access my interactive profile
             </p>
             
-            <div className="inline-block bg-white p-6 rounded-2xl shadow-lg border border-slate-200">
-              <img 
-                src={qrCodeImage} 
-                alt="QR Code for Pietro Piga Interactive CV" 
-                className="w-48 h-48 mx-auto"
-              />
-            </div>
+            <a
+              href={agentUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Pietro Piga Interactive CV"
+              className="inline-block"
+            >
+              <div className="bg-white p-6 rounded-2xl shadow-lg border border-slate-200 hover:shadow-xl transition-shadow cursor-pointer">
+                <QRCode 
+                  value={agentUrl}
+                  size={192}
+                  style={{ height: "auto", width: "12rem" }}
+                  aria-label="QR code linking to Pietro Piga Interactive CV"
+                  level="H"
+                />
+              </div>
+            </a>
             
             <p className="text-sm text-slate-500 mt-4 max-w-xs mx-auto">
               Point your camera at the QR code to open the interactive profile
