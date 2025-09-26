@@ -53,10 +53,10 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        "sf-blue": "rgb(100 116 139)", // Cold slate blue
-        "cold-accent": "rgb(148 163 184)", // Cool grey
-        "navy": "rgb(30 41 59)", // Deep navy
-        "arctic": "rgb(248 250 252)", // Arctic white
+        "sf-blue": "hsl(var(--slate-blue))", // Cold slate blue
+        "cold-accent": "hsl(var(--cold-accent))", // Cool grey
+        "navy": "hsl(var(--navy))", // Deep navy
+        "arctic": "hsl(var(--arctic))", // Arctic white
       },
       fontFamily: {
         inter: ["Inter", "system-ui", "sans-serif"],
