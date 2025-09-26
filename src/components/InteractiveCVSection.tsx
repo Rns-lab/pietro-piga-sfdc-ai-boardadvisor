@@ -44,20 +44,14 @@ export const InteractiveCVSection = () => {
                 </div>
               </div>
               
-              <a 
-                href="https://chatgpt.com/g/g-68d65b115af88191a21d5c55b2bf4ad4-pietro-piga-interactive-cv"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block w-full"
+              <Button 
+                size="lg" 
+                className="w-full bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 text-base font-medium rounded-lg"
+                onClick={() => window.open('https://chatgpt.com/g/g-68d65b115af88191a21d5c55b2bf4ad4-pietro-piga-interactive-cv', '_blank', 'noopener,noreferrer')}
               >
-                <Button 
-                  size="lg" 
-                  className="w-full bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 text-base font-medium rounded-lg"
-                >
-                  <MessageCircle className="mr-2 w-5 h-5" />
-                  Start Interactive Conversation
-                </Button>
-              </a>
+                <MessageCircle className="mr-2 w-5 h-5" />
+                Start Interactive Conversation
+              </Button>
             </CardContent>
           </Card>
 
