@@ -45,16 +45,17 @@ export const InteractiveCVSection = () => {
                 </div>
               </div>
               
-              <a
-                href={agentUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Open Pietro Piga Interactive CV in a new tab"
-                className="inline-flex items-center justify-center w-full bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 text-base font-medium rounded-lg"
-              >
-                <MessageCircle className="mr-2 w-5 h-5" />
-                Start Interactive Conversation
-              </a>
+              <Button asChild size="lg" className="w-full">
+                <a
+                  href={agentUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open Pietro Piga Interactive CV in a new tab"
+                >
+                  <MessageCircle className="mr-2 w-5 h-5" />
+                  Start Interactive Conversation
+                </a>
+              </Button>
             </CardContent>
           </Card>
 
