@@ -77,9 +77,9 @@ export const PremiumServices = () => {
               and enterprise Salesforce implementation.
             </p>
             <div className="pt-4">
-              <a 
-                href="https://www.linkedin.com/in/pietro-piga-pm/"
-                target="_blank"
+            <a
+              href="http://linkedin.com/in/pietro-piga-tech"
+              target="_blank"
                 rel="noopener noreferrer"
               >
                 <Button

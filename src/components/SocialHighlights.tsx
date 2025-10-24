@@ -20,7 +20,7 @@ export const SocialHighlights = () => {
                   CRM implementations and driving business value..."
                 </p>
                 <a 
-                  href="https://www.linkedin.com/posts/pietro-piga-pm_agenforceworldtour-salesforce-dreamforce2024-activity-7265659914784555010-3TVx"
+                  href="https://www.linkedin.com/posts/pietro-piga-tech_agenforceworldtour-salesforce-dreamforce2024-activity-7265659914784555010-3TVx"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sf-blue hover:text-sf-navy mt-4 inline-block text-sm font-medium"
@@ -42,7 +42,7 @@ export const SocialHighlights = () => {
                   transforming enterprise adoption..."
                 </p>
                 <a 
-                  href="https://www.linkedin.com/posts/pietro-piga-pm_salesforcetips-interactivetutorials-iorad-activity-7264562812339802112-wCUy"
+                  href="https://www.linkedin.com/posts/pietro-piga-tech_salesforcetips-interactivetutorials-iorad-activity-7264562812339802112-wCUy"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sf-blue hover:text-sf-navy mt-4 inline-block text-sm font-medium"
@@ -64,7 +64,7 @@ export const SocialHighlights = () => {
                   improvements in sales performance..."
                 </p>
                 <a 
-                  href="https://www.linkedin.com/posts/pietro-piga-pm_salesforce-spiff-sales-activity-7256924241604841472-iKRM"
+                  href="https://www.linkedin.com/posts/pietro-piga-tech_salesforce-spiff-sales-activity-7256924241604841472-iKRM"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sf-blue hover:text-sf-navy mt-4 inline-block text-sm font-medium"
