@@ -5,6 +5,13 @@ import { Link } from "react-router-dom";
 const ProjectScenarios = () => {
   const videos = [
     {
+      id: 13,
+      title: "Mavis - The Ideas Builder",
+      description: "Transform your ideas into perfect XML prompts for Lovable or any other builder. Trained on Lovable's prompt directory and suggests uncovered business ideas when you need inspiration",
+      icon: <Lightbulb className="w-6 h-6 sm:w-8 sm:h-8 text-slate-600 mb-2" />,
+      embedUrl: "https://share.descript.com/embed/Rle0lgDkUNY"
+    },
+    {
       id: 12,
       title: "AI-Powered Sales Automation",
       description: "Comprehensive AI sales solution demonstrating advanced automation capabilities",
