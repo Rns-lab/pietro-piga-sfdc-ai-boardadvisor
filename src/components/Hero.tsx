@@ -91,29 +91,58 @@ export const Hero = () => {
                 </div>
               </div>
 
-              {/* Case Study Card */}
-              <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-md max-w-96 mx-auto">
-                <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">Featured Case Study</div>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
-                    <div>
-                      <div className="text-xs font-medium text-slate-500">Problem</div>
-                      <div className="text-sm text-slate-700">High volume of internal support requests draining team productivity</div>
+              {/* Case Study Cards */}
+              <div className="space-y-4 max-w-96 mx-auto">
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-md">
+                  <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">Case Study #1</div>
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
+                      <div>
+                        <div className="text-xs font-medium text-slate-500">Problem</div>
+                        <div className="text-sm text-slate-700">High volume of internal support requests draining team productivity</div>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
+                      <div>
+                        <div className="text-xs font-medium text-slate-500">Solution</div>
+                        <div className="text-sm text-slate-700">Designed & deployed a Teams/SharePoint AI Agent available everywhere — including directly inside Microsoft Teams chat, so users get answers without leaving their calls</div>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
+                      <div>
+                        <div className="text-xs font-medium text-slate-500">Result</div>
+                        <div className="text-sm text-slate-900 font-semibold">30%+ reduction in internal support requests with zero-cost automation</div>
+                      </div>
                     </div>
                   </div>
-                  <div className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
-                    <div>
-                      <div className="text-xs font-medium text-slate-500">Solution</div>
-                      <div className="text-sm text-slate-700">Designed & deployed a Teams/SharePoint AI Agent for zero-cost automation</div>
+                </div>
+
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-md">
+                  <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">Case Study #2</div>
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
+                      <div>
+                        <div className="text-xs font-medium text-slate-500">Problem</div>
+                        <div className="text-sm text-slate-700">No visibility on feature adoption — releases shipped without measurable impact tracking</div>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
-                    <div>
-                      <div className="text-xs font-medium text-slate-500">Result</div>
-                      <div className="text-sm text-slate-900 font-semibold">30%+ reduction in internal support requests</div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
+                      <div>
+                        <div className="text-xs font-medium text-slate-500">Solution</div>
+                        <div className="text-sm text-slate-700">Built a highly detailed analytics dashboard based on event logs to measure adoption of every feature released on the system</div>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
+                      <div>
+                        <div className="text-xs font-medium text-slate-500">Result</div>
+                        <div className="text-sm text-slate-900 font-semibold">Data-driven release strategy with full feature adoption visibility across the enterprise</div>
+                      </div>
                     </div>
                   </div>
                 </div>
